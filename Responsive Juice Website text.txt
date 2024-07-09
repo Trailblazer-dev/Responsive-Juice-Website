@@ -1,0 +1,120 @@
+========= HEADERS ===========
+
+.nav__menu
+Home Features   Menu  Contact
+
+.login/signup
+Sign up
+
+
+======= HOME ===========
+.home__title
+Revitalize Your Routine, 
+<br/>
+Fresh, Fruity, Fantastic!
+
+.home__description
+"Savor the Symphony of Flavors, with Nature's Sweetness & deliciousness.
+Get the best variety of juices here!”
+
+.home__buttons
+
+View Menu
+Discount
+
+
+======== Features =================================
+
+.section__title
+Why you<br>
+should<br>
+choose us?
+
+.features__description
+Our commitment to excellence
+in the realm of juices sets us
+apart from the competition.
+
+
+======== MENU ========================
+
+.section__title
+Explore best <br>
+menu selections
+
+.menu__card > .menu__title
+Mango Bliss Burst 
+Pure Kiwi Joy
+Berry Burst Bliss
+
+.menu__description
+Description of the item
+
+.menu__price
+$10.00
+$8.00
+$11.00
+
+============ CONTACT =====================
+/* contact__form */
+    .section__title
+        Contact Us
+
+    .contact__description
+        Send us a message
+
+****form*****
+
+/* contact__site */
+    .section__title
+        Sitemap
+
+    .p__description
+        All our pages
+
+    ul.site__list >a
+        Home  - About Us - Services - Blog  - Contact Us
+
+/* contact__info */
+    .contact__phone
+        (08) 400 2000
+
+    .contact__email
+        xyz@gmail.com
+
+
+
+=========== ABOUT US =================
+.section__title
+    Who We Are
+
+.about__description
+    "At our juice bar, we pride ourselves on delivering the freshest and most delicious juices made from the highest quality ingredients. Our story began with a passion for health and wellness, and we continue to innovate with unique flavor combinations."
+
+
+
+============ SERVICES   =================
+.section__title
+    What Services Do We Offer?
+
+.services__description
+    "We offer a variety of services to cater to your needs, including customized juice blends, health consultations, and a subscription service for regular juice deliveries. Our expert staff is here to help you find the perfect juice for your lifestyle."
+
+
+
+============= BLOG =================
+.section__title
+    Want to Stay Updated?
+
+.blog__description
+    "Stay updated with our latest news, health tips, and delicious recipes on our blog. We share insights on the benefits of various fruits and vegetables, and provide inspiration for living a healthy and vibrant life."
+
+
+
+
+=========== FOOTER =================
+.footer__social
+fb -inst -X -yt
+
+.footer__copy
+&copy; 2023 Dscode | All rights reserved.
