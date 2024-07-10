@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600;700&family=Quicksand:wght@300..700&display=swap');
+
+:root{
+
+    /* header height */
+    --header-height:3rem;
+    /* colors */
+    --title-color:#473525E5;;
+    --description-light:#555555;
+    --dollar-color: #FF3D00;
+    --nav-color: #000000;
+    --feature-background:linear-gradient(180deg, #FFE2C8 0%, #FFF3C8 0.01%, #FEBA44 85.42%);
+    --menu-background:background: linear-gradient(180.52deg, rgba(255, 243, 200, 0.62) 0.41%, #FFA51E 99.48%);
+    --menu-icon-bg:#FF9900;
+    --menu-icon-color:#FFFFFF;
+    --menu-border:#FDFDFD;
+    --social-link-bg:#EDFFEF;
+    --social-link-color:#484848;
+
+
+
+    /* font and font-size */
+    --first-font:"Quicksand", sans-serif;
+    --second-font-family:"Jost", sans-serif;
+    --third-font-family:"Poppins", sans-serif;
+    --font-normal:400;
+    --font-medium:600;
+    --font-semibold:700;
+    --biggest-font-size:3rem;
+    --h1-font-size:1.5rem;
+    --h2-font-size:1.25rem;
+    --h3-font-size:1rem;
+    --normal-font-size:0.938rem;
+    --small-font-size:.813rem;
+
+    /* z-index */
+    --tool-fixed:100;
+    --tool-tip:10;
+
+}
+/* Responsive typography */
+@media screen and (min-width:1150px){
+    :root{
+        --biggest-font-size:4.5rem;
+        --h1-font-size:2.25rem;
+        --h2-font-size:1.5rem;
+        --h3-font-size:1.25rem;
+        --normal-font-size:1rem;
+        --small-font-size:.875rem;
+    }
+    
+}
+/* BASE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--first-font);
+    font-size: var(--normal-font-size);
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--title-color);
+}
+h1,h2,h3,h4{
+    font-family: var(--second-font-family);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+}
+ul{
+    list-style: none;;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+.section{
+    padding: 5rem 1rem;
+}
+.section__title{
+    font-weight: var(--font-semibold);
+    font-size: var(--h1-font-size);
+    margin-bottom: 2rem;
+
+}
+.main{
+    overflow: hidden;
+}
+
+/* HEADER */

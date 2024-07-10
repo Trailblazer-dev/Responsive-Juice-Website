@@ -118,3 +118,32 @@ fb -inst -X -yt
 
 .footer__copy
 &copy; 2023 Dscode | All rights reserved.
+
+
+
+
+
+home__title
+font-family: Jost;
+font-size: 80px;
+font-weight: 700;
+line-height: 88.43px;
+text-align: left;
+
+
+
+p__description
+font-family: Jost;
+font-size: 27px;
+font-weight: 400;
+line-height: 39.02px;
+text-align: left;
+
+
+menu
+border: 4px solid #FDFDFD
+
+
+box-shadow: 50px 50px 100px 0px #0000004D;
+
+box-shadow: -50px -50px 100px 0px #0000004D;
