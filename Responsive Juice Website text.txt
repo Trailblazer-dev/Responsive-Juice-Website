@@ -31,9 +31,7 @@ should<br>
 choose us?
 
 .features__description
-Our commitment to excellence
-in the realm of juices sets us
-apart from the competition.
+      
 
 
 ======== MENU ========================

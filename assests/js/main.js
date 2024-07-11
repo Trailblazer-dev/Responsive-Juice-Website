@@ -20,3 +20,31 @@ const shadowHeader =()=>{
 }
 
 window.addEventListener('scroll', shadowHeader);
+
+// SWIPER 
+
+const swiperMenu = new Swiper('.menu__container', {
+  // Optional parameters
+  grabCursor: true,
+  direction:'horizontal',
+  spaceBetween:24,
+  centeredSlides: true,
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView:2,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 48,
+    },
+  }
+  // Navigation arrows
+  
+});

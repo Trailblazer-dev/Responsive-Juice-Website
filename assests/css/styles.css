@@ -10,7 +10,9 @@
     --dollar-color: #FF3D00;
     --nav-color: #000000;
     --feature-background:linear-gradient(180deg, #FFE2C8 0%, #FFF3C8 0.01%, #FEBA44 85.42%);
-    --menu-background:background: linear-gradient(180.52deg, rgba(255, 243, 200, 0.62) 0.41%, #FFA51E 99.48%);
+    --menu-background:linear-gradient(360deg, rgba(255, 155, 37, 0.87) 2.43%, #FFF3C8 83.67%);
+
+
     --menu-icon-bg:#FF9900;
     --menu-icon-color:#FFFFFF;
     --menu-border:#FDFDFD;
@@ -67,7 +69,7 @@ body{
 }
 h1,h2,h3,h4{
     font-family: var(--second-font-family);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semibold);
     color: var(--title-color);
 }
 ul{
@@ -86,14 +88,14 @@ img{
     gap: 1.5rem;
 }
 section{
-    padding: 5rem 1rem;
+    padding-block: 4rem 1rem;
 }
-.section__title{
+/* .section__title{
     font-weight: var(--font-semibold);
     font-size: var(--h1-font-size);
     margin-bottom: 2rem;
 
-}
+} */
 .main{
     overflow: hidden;
 }
@@ -195,7 +197,7 @@ section{
 }
 /* header shadow */
 .header-shadow{
-    box-shadow: 0 4px 6px rgba(239, 154, 121, 0.5);
+    box-shadow: 0 4px 6px rgba(144, 116, 63, 0.5);
 }
 
 /* HOME */
@@ -257,3 +259,172 @@ section{
     margin: 0 auto;
     
 }
+
+/* FEATURES */
+
+.features__container{
+    grid-template-columns: 300px;
+    justify-content: center;
+    row-gap: 3rem;
+}
+.features__data{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: relative;
+}
+.features__title{
+    line-height: 1.5rem;
+}
+.features__description{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-normal);
+    padding: .5rem 3rem;
+    font-family: var(--third-font-family);
+}
+.features__images{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    padding: 1rem 1rem 2rem;
+}
+.features__image{
+    background: var(--feature-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    width: 145px;
+    height: 200px;
+    margin: 0 auto;
+    position: absolute;    
+    box-shadow:0 4px 8px #575030 ;
+}
+.image-1{
+    top: -2rem;
+    left: 0;
+}
+.image-2{
+    top: 9rem;
+    right: 0;
+}
+.image-3{
+    top :20rem;
+    left: 0;
+}
+
+.features__img-1{
+    width: max-content;
+}
+.features__img-2{
+    width: 60px;
+}
+.features__img-3{
+    width: 200px;
+}
+.features__image:hover{
+    transition: .4s;
+    transform: scale(1.05);
+}
+
+/* MENU */
+.menu__title{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.menu__container{
+    max-width: 1052px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.menu__box{
+    position: relative;
+    display: flex; 
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    width: 50%;
+    margin: 0 auto;
+    
+}
+.menu__card{
+    background: var(--menu-background);
+    width: 100px;
+    height: 200px;
+    border-radius: 1rem;
+    border: 1px solid var(--menu-border);
+    padding: 1rem ;
+    position: relative;
+    box-shadow: 0 4px 8px #8e712b;
+}
+.menu__icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    background-color: var(--menu-icon-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    border-radius: 0 1rem 0 1rem;
+    width: 50px;
+    height: 40px;
+    border: none;
+}
+.menu__icon i{
+    color: var(--menu-icon-color);
+    font-size: 1.5rem;
+}
+.menu__image{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.menu-3{
+    transform: rotate(-90deg);
+}
+.menu__img{
+    width: 200px;
+}
+
+.menu__data{
+    display: block;
+    text-align: left;
+}
+.menu__card-title{
+    font-size: var(--normal-font-size);
+    color: var(--title-color);
+    font-family: var(--third-font-family);
+    font-weight: var(--font-medium);
+}
+.menu__card-description{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-normal);
+    font-family: var(--second-font-family);
+    color: var(--title-color);
+    margin-bottom: .5rem;
+}
+.menu__card-price{
+    color:var(--title-color);
+    font: var(--third-font-family);
+    font-weight: var(--font-semibold);
+}
+.menu__card-price span{
+    color:var(--dollar-color)
+}
+
+.menu__card:hover{
+    transition: .4s;
+    transform: scale(1.05);
+}
+
