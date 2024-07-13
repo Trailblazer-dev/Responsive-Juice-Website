@@ -5,9 +5,11 @@ const navMenu = document.getElementById('nav-menu');
 const navClose= document.getElementById('nav-close');
 
 navBar.addEventListener('click', () => {
+  navBar.style.display='none';
   navMenu.classList.add('nav__show');
   navMenu.addEventListener('click', () => {
     navMenu.classList.remove('nav__show');
+    navBar.style.display='block';
   });
 });
 
@@ -31,20 +33,20 @@ const swiperMenu = new Swiper('.menu__container', {
   direction:'horizontal',
   spaceBetween:24,
   centeredSlides: true,
-  loop: true,
+  loop:true,
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
-  breakpoints: {
+  breakpoints:{
     576: {
       slidesPerView:2,
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 48,
+      spaceBetween: 40,
     },
   }
   // Navigation arrows
@@ -74,3 +76,14 @@ window.addEventListener("scroll", scrollActive);
 
 // HIDDEN SECTIONS
 
+const contactLinks = document.querySelectorAll('.contact__link');
+const contactsSections = document.querySelectorAll('.aboutus, .services, .blog');
+
+contactLinks.forEach((link, index) => {
+  link.addEventListener('click', () => {
+    contactsSections[index].classList.add('show');
+    setTimeout(() => {
+      contactsSections[index].classList.remove('show');
+    }, 8000);
+  });
+});
