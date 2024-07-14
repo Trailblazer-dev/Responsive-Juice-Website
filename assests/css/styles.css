@@ -559,13 +559,22 @@ textarea{
 .contact__link{
     margin-top: 0;
 }
-/* ABOUT US */
-.aboutus__container{
-    width: 350px;
+/* common areas */
+.aboutus__container,.services__container,.blog__container{
+    width: 250px;
     margin: 0 auto;
     padding: .5rem 1rem;
     position: relative;
 }
+.aboutus__data,.services__data,.blog__data{
+    width: 200px;
+    margin: 0 auto;
+}
+.aboutus__image,.services__image,e{
+    width: 200px;
+}
+
+/* ABOUT US */
 .aboutus__title{
     margin-bottom: 1rem;
     text-align: center;
@@ -573,17 +582,10 @@ textarea{
 .aboutus__description{
     color: var(--description-light);
 }
-.aboutus__image{
-    width: 300px;
-}
 
 
 /* SERVICES */
-.services__container{
-    width: 350px;
-    margin: 0 auto;
-    padding: .5rem 1rem;
-}
+
 .services__title{
     margin-bottom: 1rem;
     text-align: center;
@@ -591,16 +593,9 @@ textarea{
 .services__description{
     color: var(--description-light);
 }
-.services__image{
-    width: 300px;
-}
 
 /* BLOG */
-.blog__container{
-    width: 350px;
-    margin: 0 auto;
-    padding: .5rem 1rem;
-}
+
 .blog__title{
     margin-bottom: 1rem;
     text-align: center;
@@ -609,13 +604,19 @@ textarea{
     color: var(--description-light);
 }
 .blog__image{
-    width: 300px;
-}
-.aboutus__container,.services__container,.blog__container{
+    position: relative;
     width: 200px;
+    overflow: hidden;
 }
-.aboutus__image,.services__image,.blog__image{
-    width: 200px;
+.blog__img{
+    position: relative;
+    z-index: 10;
+}
+.blog__img-splash{
+    z-index: 1;
+    position: absolute;
+    bottom:-4rem;
+    transform: rotateY(180deg);
 }
 
 
@@ -806,11 +807,17 @@ textarea{
         width: 500px;
         /* grid-template-columns: repeat(2,1fr); */
     }
+    .aboutus__data,.services__data,.blog__data{
+        width: 300px;
+    }
     .aboutus__title,.services__title,.blog__title{
         font-size: var(--biggest-font-size);
     }
     .aboutus__image,.services__image,.blog__image{
         width: 400px;
+    }
+    .blog__img-splash{
+        bottom: -7.2rem;
     }
 
 }
@@ -916,9 +923,10 @@ textarea{
     }
     .aboutus__container,.services__container,.blog__container{
         grid-template-columns: repeat(2,1fr);
-        width: 100%;
+        width: 900px;
         align-items: center;
         padding: 0 3rem;
+        margin: 0 auto;
     }
     .aboutus__title,.services__title,.blog__title{
         text-align: initial;
@@ -928,9 +936,12 @@ textarea{
         font-size: 1.25rem;
         color: #000000c3;   
     }
-    .aboutus__image,.services__image,.blog__image{
-        width: 700px;
-    }    
+    .services__image{
+        width: 600px;
+    }
+    .aboutus__image{
+        width: 500px;
+    }
 }
 
 @media screen and (min-width: 1168px) {
