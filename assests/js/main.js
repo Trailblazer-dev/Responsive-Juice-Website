@@ -87,3 +87,23 @@ contactLinks.forEach((link, index) => {
     }, 8000);
   });
 });
+
+// REVEAL 
+
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay:400,
+  reset: true,
+})
+sr.reveal('.home__containerr')
+sr.reveal('.features__images', {origin: 'bottom',delay:600})
+sr.reveal('.features__data', {delay:600,origin:'left'})
+sr.reveal('.menu__container', {delay:800,origin:'left'})
+sr.reveal('.menu__title',{origin:'bottom',delay:700})
+sr.reveal('.contact__container',{delay:1000})
+sr.reveal('.show',{delay:500,origin:'bottom'})
+sr.reveal('.aboutus__data',{delay:900,origin:'right'})
+// sr.reveal('.aboutus__image,.services__image,.blog__image',{delay:900,origin:'left'})
+sr.reveal('.footer',{delay:1200,origin:'bottom'})
