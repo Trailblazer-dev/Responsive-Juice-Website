@@ -654,7 +654,18 @@ textarea{
 .footer__social-link:hover{
     background-color: var(--menu-icon-bg);
 }
-
+::-webkit-scrollbar{
+    width: 0.7rem;
+    background-color: #e5dba8;
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #927d4b;
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #b89734;
+}
 
 /* BREAKING POINT */
 
