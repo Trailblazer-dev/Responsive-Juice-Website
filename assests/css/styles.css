@@ -197,6 +197,24 @@ section{
     right: 0;
 
 }
+/* Active link */
+/* .active-link::after{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    width: 50px;
+    height: 2px;
+    background-color: #FF3D00;
+    margin:0 auto;
+    transform: 0 0;
+    opacity: 0;
+    transition-property: opacity transform;
+}
+.active-link::after{
+    opacity: 1;
+    transform: translateY(4px);
+} */
+
 /* header shadow */
 .header-shadow{
     box-shadow: 0 4px 6px rgba(144, 116, 63, 0.5);
