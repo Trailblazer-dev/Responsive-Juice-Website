@@ -307,9 +307,9 @@ section{
     row-gap: 1rem;
     position: relative;
 }
-.features__title{
+/* .features__title{
     font-size: calc(var(--biggest-font-size) - 1rem);
-}
+} */
 .features__description{
     font-size: var(--small-font-size);
     font-weight: var(--font-normal);
@@ -786,12 +786,9 @@ textarea{
         width: 350px;
         margin:0 auto
     }
-    
-}
-@media screen and (min-width:480px){
-    .features__image{
-        width: initial;
-        height: initial;
+    .aboutus__description,.services__description,.blog__description{
+        padding: 0 1rem;
+        text-align: center;
     }
     
 }
@@ -817,30 +814,31 @@ textarea{
     }
     .home__image{
         width: 450px;
+        margin: 0 auto;
     }
     
     .home__description,.features__description,.contact__description,.aboutus__description,.services__description,.blog__description{
-        text-align:initial;
-        font-size: var(--font-medium);
+        /* text-align:initial; */
+        font-size: var(--h3-font-size);
     }
-    .home__description{
+    /* .home__description{
         padding: 0 5rem;
-    }
-    .features__container{
+    } */
+    /* .features__container{
         grid-template-columns: 500px;
-    }
-    .features__title{
-        font-size: var(--biggest-font-size);
-        line-height: initial;
-    }
+    } */
     
     .features__images{
         height: 300px;
     }
+    .features__image{
+        width: 29%;
+        height: 75%;
+    }
     .image-2{
         top: 3rem;
         left: 1rem;
-        right: 1rem;
+        right: .1rem;
     }
     .image-3{
         right: 0;
@@ -848,7 +846,7 @@ textarea{
         top: -2rem;
 
     }
-    .menu__title{
+    .section__title{
         font-size: var(--biggest-font-size);
     }
     .menu__container{
@@ -857,6 +855,13 @@ textarea{
     .menu__card{
         width: auto;
         height: auto;
+    }
+    .blog__image{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .blog__img-splash{
+        bottom: -8rem;
     }
     .contact__container{
         width: initial;
@@ -883,36 +888,62 @@ textarea{
     .footer__container{
         flex-direction: row;
     }
-    .aboutus__container,.services__container,.blog__container{
-        width: 500px;
-        /* grid-template-columns: repeat(2,1fr); */
-    }
-    .aboutus__data,.services__data,.blog__data{
-        width: 300px;
-    }
-    .aboutus__title,.services__title,.blog__title{
-        font-size: var(--biggest-font-size);
-    }
-    .aboutus__image,.services__image,.blog__image{
-        width: 400px;
-    }
-    .blog__img-splash{
-        bottom: -7.2rem;
-    }
-
+    
 }
 @media screen and (min-width: 768px){
-    .home__data{
+    /* .home__data{
         width: 600px;
-    }
+    } */
     .home__title{
         line-height: initial;
     }
+    .features__images{
+        height: 400px;
+        margin: 0 auto;
+    }
     .menu__container{
-        width: 650px;
+        width: 700px;
+    }
+    .aboutus__container,.services__container,.blog__container{
+        grid-template-columns: .8fr 1fr;
+    }
+    /* .services__container{
+        grid-template-columns: 1fr;
+    } */
+    .services__image{
+        order: -1;
+    }
+    .aboutus__image{
+        width: 350px;
+    }
+    .blog__image{
+        width: 250px;
+    }
+    .blog__img-splash{
+        bottom: -5rem;
     }
     .contact__container{
         gap: 3rem;
+    }
+    
+}
+@media screen and ( min-width:800px){
+    .contact__container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .contact__address{
+        grid-column: initial;
+        padding: 0 2rem 10rem;
+    }
+    .contact__logo{
+        width: 150px;
+    }
+    .contact__info{
+        position: relative;
+        top: 3rem;
+    }  
+    .contact__title{
+        font-size: calc( var(--biggest-font-size) - 1rem );
     }
     
 }
@@ -939,32 +970,36 @@ textarea{
         justify-content: initial;
     }
     .home__image{
-        width: 400px;
+        width: 90%;
         padding-left: 2rem;
         margin: 0 auto;
     }
     .features__container{
-        grid-template-columns: .4fr 1fr;
+        grid-template-columns: .5fr 1fr;
         padding: 0 3rem;
         align-items: center;
         margin-bottom: 8rem;
+        justify-items: center;
     }
     .features__data{
         text-align: initial;
     }
+    .features__title{
+        font-size: calc( var(--biggest-font-size) - 1rem );
+    }
     .features__description{
         padding: initial;
-        width: 250px;
+        /* width: 250px; */
     }
     .features__image{
-        width: 200px;
+        width: 175px;
         height: 280px;
     }
     .menu{
         padding: 0 3rem;
     }
     .menu__title{
-        text-align: initial;
+        /* text-align: initial; */
         margin-bottom: 0;
     }
     .menu__container{
@@ -983,49 +1018,40 @@ textarea{
     .menu__card-price{
         font-size: var(--h3-font-size);
     }
-    .contact__container{
-        grid-template-columns: repeat(3,1fr);
-    }
-    .contact__address{
-        grid-column: initial;
-        padding: 0 2rem 10rem;
-    }
-    .contact__logo{
-        width: 150px;
-    }
-    .contact__info{
-        position: relative;
-        top: 3rem;
-    }
-    .footer__container{
-        justify-content: flex-start ;
-        padding-left: 10rem;
-    }
+    
+    
     .aboutus__container,.services__container,.blog__container{
-        grid-template-columns: repeat(2,1fr);
-        width: 900px;
+        /* width: 90px; */
         align-items: center;
         padding: 0 3rem;
         margin: 0 auto;
     }
-    .aboutus__title,.services__title,.blog__title{
+    /* .aboutus__title,.services__title,.blog__title{
         text-align: initial;
-    }
+    } */
     .aboutus__description,.services__description,.blog__description{
-        width: 300px;
-        font-size: 1.25rem;
-        color: #000000c3;   
+        color: #000000c3;  
+        text-align: initial; 
     }
-    .services__image{
+    /* .services__image{
         width: 600px;
-    }
+    } */
     .aboutus__image{
         width: 500px;
+    }
+    .blog__image{
+        width: 350px;
+    }
+    .blog__img-splash{
+        bottom: -7rem;
+    }
+    .footer__container{
+        column-gap: 7rem;
     }
 }
 
 @media screen and (min-width: 1168px) {
-        .features__image{
+    .features__image{
         width: 250px;
         height: 300px;
     }
