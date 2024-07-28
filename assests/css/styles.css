@@ -1009,7 +1009,7 @@ textarea{
         height: 300px;
     }
     .menu__image{
-        width:180px;
+        width:179px;
         height: 180px;
     }
     .menu__card-title{
@@ -1018,7 +1018,9 @@ textarea{
     .menu__card-price{
         font-size: var(--h3-font-size);
     }
-    
+    .menu__box{
+        gap: 0;
+    }
     
     .aboutus__container,.services__container,.blog__container{
         /* width: 90px; */
@@ -1052,10 +1054,7 @@ textarea{
 
 @media screen and (min-width: 1168px) {
     .features__image{
-        width: 250px;
-        height: 300px;
-    }
-    .home__image{
-        width: 500px;
-    }
+        width: 200px;
+        height: 280px;
+    }   
 }
