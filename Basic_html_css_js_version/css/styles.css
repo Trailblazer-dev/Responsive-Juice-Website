@@ -61,7 +61,7 @@
 body{
     font-family: var(--first-font);
     font-size: var(--normal-font-size);
-    background-image: url(../img/background.png);
+    background-image: url(../../assests/background.png);    
     background-repeat:no-repeat;
     background-size: cover;
     object-fit: cover;
@@ -108,7 +108,7 @@ section{
     top: 0;
     left: 0;
     width: 100%;
-    background-image: url(../img/background.png);
+    background-image: url(../../assests/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: var(--tool-fixed);
@@ -133,7 +133,7 @@ section{
     
 .nav__menu{
     position: fixed;
-    background-image: url(../img/background.png);
+    background-image: url(../../assests/background.png);
     background-size:cover;
     background-repeat: no-repeat;
     right: -100%;
