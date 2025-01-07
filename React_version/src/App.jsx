@@ -3,8 +3,11 @@ import Header from "./components/Header"
 function App() {
   return (
     <>
-    <Header />
-    
+    <div className="bg-hero-pattern bg-cover w-full h-screen">
+      
+      <Header />
+      
+    </div>
     </>
   )
 }

@@ -1,4 +1,4 @@
-import features1 from "../assets/feature-1.png";
+import features1 from "../assets/feauture-1.png";
 import features2 from "../assets/feature-2.png";
 import features3 from "../assets/feature-3.png";
 
@@ -12,18 +12,22 @@ import blogImg from "../assets/blog.png";
 
 export const header=[
     {
+        id:1,
         title:"Home",
         href:"#home",
     },
     {
+        id:2,
         title:"Features",
         href:"#features",
     },
     {
+        id:3,
         title:"Menu",
         href:"#menu",
     },
     {
+        id:4,
         title:"Contact",
         href:"#contact",
     }
