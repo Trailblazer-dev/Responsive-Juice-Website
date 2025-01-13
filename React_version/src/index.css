@@ -5,16 +5,16 @@
 @tailwind utilities;
 
 
-body{
+/* body{
     @apply font-first;
-    @apply bg-hero-pattern;
-    @apply bg-cover;
-    @apply w-full;
-    @apply h-screen;
-}
+    background-image: url('./assets/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+} */
 
 h1,h2,h3{
-    @apply font-second
+    @apply font-second;
 }
 
 :root{
@@ -46,7 +46,7 @@ h1{
 h2{
     font-size: var(--h2-font-size);
 }
-h3{
+h3,.h3{
     font-size: var(--h3-font-size);
 }
 .normal-text{
@@ -55,3 +55,7 @@ h3{
 .small-text{
     font-size: var(--small-font-size);
 }
+/* .container{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+} */

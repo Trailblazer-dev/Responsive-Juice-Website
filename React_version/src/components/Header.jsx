@@ -28,9 +28,9 @@ const Header = () => {
         </ul>
       </nav>
       <div className=''>
-        <button className='border-2 border-orange-600 rounded-md px-2 py-1 font-semibold md:text-xl'>sign up</button>
+        <button className='border-2 border-menu_icon_bg rounded-md px-2 py-1 font-semibold md:text-xl hover:animate-pulse'>sign up</button>
       </div>
-      {showMenu?<X className='md:hidden' onClick={handleMenu}/>:<AlignJustify className='md:hidden' onClick={handleMenu}/> }
+      {showMenu?<X className='md:hidden hover:cursor-pointer text-title' onClick={handleMenu}/>:<AlignJustify className='md:hidden hover:cursor-pointer text-title' onClick={handleMenu}/> }
       
     </div>
   )
