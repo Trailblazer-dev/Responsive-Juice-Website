@@ -9,27 +9,34 @@ import menu3 from "../assets/menu-3.png";
 import aboutImg from "../assets/about.png";
 import servicesImg from "../assets/services.png";
 import blogImg from "../assets/blog.png";
+import { AlignLeft, House, StarHalf, UserRoundSearch } from "lucide-react";
+import imgUrl from "../assets/home.png";
 
 export const header=[
     {
         id:1,
         title:"Home",
         href:"#home",
+        icon:House
     },
     {
         id:2,
         title:"Features",
         href:"#features",
+        icon:StarHalf
     },
     {
         id:3,
         title:"Menu",
         href:"#menu",
+        icon:AlignLeft
+
     },
     {
         id:4,
         title:"Contact",
         href:"#contact",
+        icon:UserRoundSearch
     }
 ]
 
@@ -40,7 +47,8 @@ export const hero={
     title2: "Fresh, Fruity, Fantastic!",
     subtitle: "Savor the Symphony of Flavors, with Nature's Sweetness & deliciousness.Get the best variety of juices here!",
     btnOne:"View Menu",
-    btnTwo:"Discount"
+    btnTwo:"Discount",
+    img:imgUrl
 }
 
 // Features section

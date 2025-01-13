@@ -1,11 +1,13 @@
 import Header from "./components/Header"
+import Hero from "./components/Hero"
 
 function App() {
   return (
     <>
-    <div className="bg-hero-pattern bg-cover w-full h-screen">
+    <div >
       
       <Header />
+      <Hero  />
       
     </div>
     </>

@@ -16,11 +16,13 @@ const Header = () => {
         </a>
       </div>
       
-      <nav className={`${showMenu?'block':'hidden'} md:block absolute left-0 top-[3.1rem] w-full bg-hero-pattern bg-cover shadow-md z-20 transition-opacity ease-in-out duration-1000 delay-400 md:relative md:bg-none md:top-0 md:w-0 md:shadow-none md:z-0 `}>
-        <ul className='flex flex-col md:flex-row items-center gap-2 md:justify-center'>
+      <nav className={` ${showMenu?'block':'hidden'} md:block absolute left-0 top-[3.1rem] w-full bg-hero-pattern bg-cover shadow-md z-20 transition-opacity ease-in-out duration-1000 delay-400 md:relative md:bg-none md:top-0 md:w-0 md:shadow-none md:z-0 `}>
+        <ul className='flex flex-col md:flex-row items-center  gap-2 md:justify-center'>
             {header.map((item)=>(
-              <li key={item.id} className='py-2 md:px-4'>
-                <a href={item.href} className='hover:text-orange-500 font-semibold sm:text-xl' onClick={()=>setShowMenu(!showMenu)}>{item.title}</a>
+              <li key={item.id} className='py-2 md:px-4 w-[120px]md:w-auto'>
+                <a href={item.href} className='hover:text-orange-500 font-normal sm:text-xl flex font-third text-nav' onClick={()=>setShowMenu(!showMenu)}>
+                  <item.icon className='inline-block mr-2'/>
+                  {item.title}</a>
               </li>
             ))}
         </ul>
