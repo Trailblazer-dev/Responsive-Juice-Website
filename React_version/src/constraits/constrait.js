@@ -12,11 +12,14 @@ import blogImg from "../assets/blog.png";
 import { AlignLeft, House, StarHalf, UserRoundSearch } from "lucide-react";
 import imgUrl from "../assets/home.png";
 
+
+// px-2 md:px-4 lg:px-8 pb-6
+
 export const header=[
     {
         id:1,
         title:"Home",
-        href:"#home",
+        href:"#hero",
         icon:House
     },
     {
@@ -61,17 +64,17 @@ export const featuresImage=[
     {
         id:1,
         alt:"We use only the freshest, highest-quality ingredients in our juices.",
-        img:{features1}
+        img:features1,
     },
     {
         id:2,
         alt:"Choose from a wide variety of delicious juice blends, each made with care.",
-        img:{features2}
+        img:features2
     },
     {
         id:3,
         alt:"Order online and have your juice delivered right to your doorstep, whenever you want.",
-        img:{features3}
+        img:features3
     }
 ]
 

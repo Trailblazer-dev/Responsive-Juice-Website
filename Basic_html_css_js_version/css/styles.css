@@ -5,7 +5,19 @@
     /* header height */
     --header-height:3rem;
     /* colors */
-    
+    --title-color:#473525E5;
+    --description-light:#6e6348;
+    --dollar-color: #FF3D00;
+    --nav-color: #000000;
+    --feature-background:linear-gradient(180deg, #FFE2C8 0%, #FFF3C8 0.01%, #FEBA44 85.42%);
+    --menu-background:linear-gradient(360deg, rgba(255, 155, 37, 0.87) 2.43%, #FFF3C8 83.67%);
+
+
+    --menu-icon-bg:#FF9900;
+    --menu-icon-color:#FFFFFF;
+    --menu-border:#FDFDFD;
+    --social-link-bg:#EDFFEF;
+    --social-link-color:#484848;
 
 
 

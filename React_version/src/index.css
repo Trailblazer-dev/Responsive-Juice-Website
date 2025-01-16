@@ -59,3 +59,11 @@ h3,.h3{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 } */
+.section__title{
+    font-size:calc( var(--biggest-font-size) - 1rem );
+
+}
+.second-img{
+     width: 60px;
+}
+
