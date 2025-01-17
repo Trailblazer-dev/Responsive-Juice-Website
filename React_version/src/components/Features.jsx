@@ -3,7 +3,7 @@ import { features, featuresImage } from "../constraits/constrait";
 const Features = () => {
   return (
     <div id="features" className="py-4 mt-8 flex flex-col justify-center items-center px-2 md:px-4 lg:px-8 pb-6 md:flex-row lg:mb-2">
-      <div className="flex flex-col justify-center items-center md:w-2/5">
+      <div className="flex flex-col justify-center items-center md:items-start md:w-2/5 select-none">
         <h1 className="section__title font-bold text-title md:text-left">
           Why you <br /> should <br />
           choose us?

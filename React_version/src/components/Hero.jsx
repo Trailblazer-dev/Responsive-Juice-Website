@@ -3,7 +3,7 @@ import { hero } from "../constraits/constrait"
 function Hero() {
   return (
     <div className='pt-[6rem] flex flex-col md:flex-row px-2 md:px-4 lg:px-8 pb-6 lg:gap-4 justify-center items-center' id="hero">
-        <div className="md:w-1/2 mb-6 sm:mb-8 md:mb-0">
+        <div className="md:w-1/2 mb-6 sm:mb-8 md:mb-0 select-none">
             <h1 className="hero font-bold text-title leading-tight mb-4 lg:leading-normal lg:pr-4">
                 {hero.title}<br></br>{hero.title2}
             </h1>

@@ -86,22 +86,25 @@ export const menu={
     }
 export const menuItem=[    
     {
+        id:1,
         title:"Mango Bliss Burst",
         desc:"Description of the item.",
         price:"10.00",
-        img:{menu1}
+        img:menu1
     },
     {
+        id:2,
         title:"Pure Kiwi Joy",
         desc:"Description of the item",
         price:"8.00",
-        img:{menu2}
+        img:menu2
     },
     {
+        id:3,
         title:"Berry Burst Bliss",
         desc:"Description of the item",
         price:"11.00",
-        img:{menu3}
+        img:menu3
     }
 ]
 

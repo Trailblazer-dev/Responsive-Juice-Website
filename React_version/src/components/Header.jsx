@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div className='fixed top-0 left-0 w-full bg-hero-pattern bg-cover shadow-md flex flex-row items-center justify-between px-5 z-50'>
       <div>
-        <a href="#home" className='hover:cursor-pointer'>
+        <a href="#hero" className='hover:cursor-pointer'>
           <img src={logo} alt="logo" className='w-[50px] md:w-[60px]' />
         </a>
       </div>
