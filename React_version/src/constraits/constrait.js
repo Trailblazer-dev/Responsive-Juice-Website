@@ -112,7 +112,7 @@ export const menuItem=[
 export const about={
     title:"Who We Are",
     desc:"At our juice bar, we pride ourselves on delivering the freshest and most delicious juices made from the highest quality ingredients. Our story began with a passion for health and wellness, and we continue to innovate with unique flavor combinations.",
-    img:{aboutImg}
+    img:aboutImg
 
 }
 
