@@ -120,7 +120,7 @@ export const about={
 export const services={
     title:"What Services Do We Offer?",
     desc:"We offer a variety of services to cater to your needs, including customized juice blends, health consultations, and a subscription service for regular juice deliveries. Our expert staff is here to help you find the perfect juice for your lifestyle.",
-    img:{servicesImg}
+    img:servicesImg
 }
 
 // Blog

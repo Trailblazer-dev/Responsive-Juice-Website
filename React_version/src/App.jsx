@@ -4,6 +4,7 @@ import Features from "./components/Features"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Menu from "./components/Menu"
+import Service from "./components/Service"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Features />
       <Menu />
       <About />
+      <Service />
             
     </div>
     </>
