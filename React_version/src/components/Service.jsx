@@ -3,7 +3,7 @@ import { services } from "../constraits/constrait"
 
 function Service() {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center mx-4 md:mx-8 lg:mx-8 mt-8">
+    <div className="flex flex-col md:flex-row justify-center items-center mx-4 md:mx-8 lg:mx-8 mt-8" id="services">
       <div className="order-2 md:order-1 flex justify-center items-center md:w-1/2 md:items-end">
         <img src={services.img} alt="" />
       </div>

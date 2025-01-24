@@ -4,7 +4,7 @@ import { menu, menuItem } from "../constraits/constrait";
 
 function Menu() {
   return (
-    <div className="mt-10 select-none">
+    <div className="mt-10 select-none" id="menu">
       <h2 className="section__title text-title font-bold text-center">
         {menu.title} <br /> {menu.desc}
       </h2>

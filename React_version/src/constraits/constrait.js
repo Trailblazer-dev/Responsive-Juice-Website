@@ -8,8 +8,8 @@ import menu3 from "../assets/menu-3.png";
 
 import aboutImg from "../assets/about.png";
 import servicesImg from "../assets/services.png";
-import blogImg from "../assets/blog.png";
-import { AlignLeft, House, StarHalf, UserRoundSearch } from "lucide-react";
+import blogImg from "../assets/blog 1.png";
+import { AlignLeft, Facebook, House, Instagram, StarHalf, UserRoundSearch, X, Youtube } from "lucide-react";
 import imgUrl from "../assets/home.png";
 
 
@@ -127,13 +127,15 @@ export const services={
 export const blog={
     title:'Want to Stay Updated?',
     desc:"Stay updated with our latest news, health tips, and delicious recipes on our blog. We share insights on the benefits of various fruits and vegetables, and provide inspiration for living a healthy and vibrant life.",
-    img:{blogImg}
+    img:blogImg
 }
 
 // Contact section
 export const contact={
     title:"Contact Us",
     desc:"Send us a message",
+    site:"Sitemap",
+    siteDesc:"All our pages",
     phone:"(08) 400 2000",
     email:"xyz@gmail.com"
 }
@@ -141,7 +143,7 @@ export const contact={
 export const siteList=[
     {
         title:"Home",
-        href:"#home",
+        href:"#hero",
     },
     {
         title:"About Us",
@@ -163,17 +165,21 @@ export const siteList=[
 
 export const socialList=[
     {
-        title:"Facebook",
+        title: Facebook ,
         href:"#",
     },
     {
-        title:"Twitter",
+        title:X ,
         href:"#",
     },
     {
-        title:"Instagram",
+        title:Instagram ,
         href:"#",
     },
+    {
+        title:Youtube ,
+        href:"#",
+    }
     
 ]
 
